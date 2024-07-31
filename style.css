@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.main {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100svh;
+}
+.first_container {
+    padding: 10px 0;
+    margin: auto;
+    width: 90%;
+}
+.innerdiv {
+    width: 100%;
+    max-width: 500px;
+}
+input{
+    display: block;
+    width: 100%;
+    line-height: 3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    opacity: 50%;
+}
+.sub-heading {
+    margin-bottom: 1.5rem;
+}
+.second_container {
+    padding: 20px
+}
+button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(65, 219, 135);
+    margin-top: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+    transition: 300ms;
+}
+.second_container li {
+    margin-bottom: 2rem;
+}
+section {
+    display: grid;
+    align-items: center;
+    background-color: rgb(177, 226, 226)
+} 
+.ps {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+.light {
+    opacity: 60%;
+}
+.heading {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+}
+section p {
+    margin-top: 5px;
+}
+span {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .light {
+        opacity: 75%;
+    }
+}    
